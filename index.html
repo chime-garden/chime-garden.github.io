@@ -16,12 +16,16 @@
   section { background: var(--card); border-radius: 16px; padding: 20px 22px; margin-top: 20px; }
   h2 { margin: 0 0 8px; font-size: 1.3rem; }
   a { color: var(--accent); }
-  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 999px; font-weight: 600; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #0f0f0f; border: 2px solid #e5e5e5; text-decoration: none; padding: 9px 18px; border-radius: 999px; font-weight: 600; }
+  .btn svg { width: 34px; height: 24px; flex: none; }
+  nav { display: flex; justify-content: flex-end; gap: 18px; margin-bottom: 12px; font-weight: 600; }
+  nav a { text-decoration: none; }
   footer { margin-top: 32px; color: var(--soft); font-size: .9rem; }
 </style>
 </head>
 <body>
 <main>
+  <nav><a href="https://www.youtube.com/channel/UCI00pHE9XqBIjCUl4YoHBKQ">YouTube Channel</a><a href="privacy.html">Privacy Policy</a></nav>
   <h1>Tink &amp; the Chime Garden</h1>
   <p class="tag">An original animated show for little ones about music, feelings and friendship.</p>
   <img src="tink.jpg" alt="Tink the chiming bird and her friends in the Chime Garden">
@@ -32,7 +36,7 @@
     <strong>Boom</strong> the bear and his log drum, <strong>Pipa</strong> the mouse and her whistle, and
     <strong>Gus</strong>, a sleepy frog with a very important croak. In every episode they sing, move, play
     Seek &amp; Find, and learn something kind together: counting, listening, sharing, saying sorry, being brave.</p>
-    <p><a class="btn" href="https://www.youtube.com/channel/UCI00pHE9XqBIjCUl4YoHBKQ">Watch on YouTube</a></p>
+    <p><a class="btn" href="https://www.youtube.com/channel/UCI00pHE9XqBIjCUl4YoHBKQ"><svg viewBox="0 0 34 24" aria-hidden="true"><rect width="34" height="24" rx="6" fill="#FF0000"/><path d="M13.5 6.5v11l9.5-5.5z" fill="#fff"/></svg>Watch on YouTube</a></p>
   </section>
 
   <section>
@@ -49,7 +53,9 @@
   </section>
 
   <footer>
-    <a href="privacy.html">Privacy Policy</a> · Contact: <a href="mailto:legendarygamingpodcast@gmail.com">legendarygamingpodcast@gmail.com</a>
+    <a href="privacy.html">Privacy Policy</a> · Chime Garden Uploader uses YouTube API Services
+    (<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>,
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>) · Contact: <a href="mailto:legendarygamingpodcast@gmail.com">legendarygamingpodcast@gmail.com</a>
   </footer>
 </main>
 </body>
